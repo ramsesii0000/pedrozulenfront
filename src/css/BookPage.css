@@ -1,0 +1,68 @@
+.container-book-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 25px;
+  }
+select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #495057;
+    appearance: none;
+    width: 200px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+ 
+select option {
+    padding: 8px;
+}
+ 
+select:focus {
+    outline: none;
+    border-color: #80bdff;
+}
+ 
+select:hover {
+    border-color: #6c757d;
+}
+ 
+select:disabled {
+    border-color: #e9ecef;
+    background-color: #e9ecef;
+}
+
+.btn-clean-states {
+  background-color: #31658d; 
+  color: white; 
+  border: 1px solid #000000; 
+  padding: 8px 16px; 
+  cursor: pointer; 
+  border-radius: 4px; 
+  font-size: 16px; 
+  margin-right: 70px;
+}
+
+.btn-clean-states:hover {
+  background-color: #09203f; 
+}
+
+ 
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .container-book-page {
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  select {
+    margin-top: 10px;
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

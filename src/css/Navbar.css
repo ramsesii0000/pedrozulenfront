@@ -1,0 +1,106 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to top, #09203f 0%, #31658d 100%);
+    color: black;
+    padding: 1rem;
+}
+ 
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+ 
+.navbar-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #F4D03F;
+}
+ 
+.navbar-span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #F4D03F;
+    margin-left: auto;
+    margin-top: 5px;
+    cursor: pointer;
+}
+ 
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+ 
+.navbar-item {
+    display: flex;
+    align-items: center;
+    color: black;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    background: #c38e39;
+    transition: background 0.4s linear, transform 0.4s ease-in-out;
+}
+ 
+.navbar-link {
+    text-decoration: none;
+    color: #09203f;
+    transition: color 0.3s;
+}
+ 
+.navbar-icon {
+    font-size: 1.2rem;
+    margin-left: 0.6rem;
+}
+ 
+.navbar-link:hover,
+.navbar-item:hover {
+    animation: bounce 0.4s ease-in-out 3;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    25%, 75% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+ 
+/* Media queries para hacer la barra de navegación más responsive */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+ 
+    .navbar-menu {
+        margin-top: 1rem;
+    }
+ 
+    .navbar-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+        font-size: 14px;
+    }
+ 
+    .navbar-icon {
+        font-size: 1rem;
+        margin: auto;
+    }
+}

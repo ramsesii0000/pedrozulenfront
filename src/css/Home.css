@@ -1,0 +1,145 @@
+/* Estilos para el Header */
+.header-img{
+    height: 90vh;
+    background-image: linear-gradient(to top, rgba(48, 86, 209, 0.5) 0%, rgba(51, 8, 103, 0.39) 100%), url(../assets/libros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+.titulo{
+    font-size: 55px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 250;
+    color: #3498DB;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-servicio img{
+    max-width: 50%; 
+    height: auto;
+}
+
+.checklist-servicio{
+    width: 45%;
+}
+
+.service{
+    margin-bottom: 20px;
+}
+
+.n-servicios{
+    margin-bottom: 7px;
+    color: #3498DB;
+}
+
+.number{
+    display: inline-block;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+.contenedor-home{
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
+/* Animacion Interactiva */
+.img-galeria:hover {
+    transform: scale(1.1); 
+    transition: transform 0.2s ease-in-out;
+}
+
+.modal-gallery {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-image {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.gallery{
+    background: #f2f2f2;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria{
+    width: 15%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+/* Media Query para hacer los estilos más responsivos */
+@media screen and (max-width: 768px) {
+    .contenedor-servicio img {
+        width: 80%; /* Cambio sugerido */
+    }
+
+    .checklist-servicio {
+        width: 100%; /* Cambio sugerido */
+    }
+
+    .img-galeria {
+        width: 30%; /* Cambio sugerido */
+    }
+}

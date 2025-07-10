@@ -1,0 +1,122 @@
+.my-loans-container {
+  width: 100%;
+  min-height: 50vh; 
+}
+
+.my-loan-title {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.title-favorite {
+  color: #333;
+  font-size: 2rem;
+}
+
+.loans-container {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+}
+
+.details-loans {
+  display: flex;
+  justify-content: space-between; 
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.details-loans p {
+  margin: 5px 0;
+  font-size: 1.4rem;
+}
+
+.details-loans button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.details-loans button:hover {
+  background-color: #0056b3;
+}
+
+.details-loans-books {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.detail-item-book {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.detail-item-book p {
+  margin: 5px 0;
+  text-align: center; 
+}
+
+.detail-item-book img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*No hay préstamos*/
+
+.empty-loans-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 20px; 
+}
+
+.title-empty-loans {
+  font-size: 24px; 
+  font-weight: bold; 
+  margin-bottom: 20px;
+}
+
+.img-loans-empty {
+  max-width: 35%; 
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.paragraph-empty-loans {
+  font-size: 20px; 
+  margin-bottom: 10px;
+  font-weight: bold; 
+}
+
+
+@media screen and (max-width: 768px) {
+  .details-loans {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .detail-item-book {
+    margin-right: 0; 
+  }
+  .img-loans-empty{
+    max-width: 100%; 
+    height: auto;
+  }
+}

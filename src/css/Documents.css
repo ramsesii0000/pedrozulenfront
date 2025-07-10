@@ -1,0 +1,51 @@
+.pdf-download-button, .excel-export-button {
+  background-color: transparent;
+  border: none;
+  color: #333; 
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.pdf-download-button:hover {
+    background-color: rgb(211, 60, 60); 
+    color: white;
+}
+.excel-export-button:hover{
+    background-color: rgb(33, 129, 33);
+    color: white;
+}
+
+.img-pdf-button, .img-excel-button {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px; 
+}
+
+.button-text {
+  margin-left: 4px; 
+}
+
+.button-container {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  margin-bottom: 20px;
+}
+
+.divider-line {
+  width: 1px; 
+  height: 24px; 
+  background-color: #333; 
+  margin: 0 16px; 
+}
+
+
+

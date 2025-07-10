@@ -1,0 +1,44 @@
+.sidebar-container {
+    width: 45vh;
+    height: 100vh;
+    background:#09203f;
+    padding: 20px;
+    box-sizing: border-box;
+}
+  
+.title-sidebar {
+    font-size: 2.5em;
+    margin-bottom: 60px;
+    color: white;
+}
+
+.nav-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.nav-container li {
+    margin-bottom: 30px;
+}
+  
+.nav-container button {
+    background:#09203f;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+    color: white;
+    display: flex; 
+}
+  
+.nav-container button:hover {
+    background:#31658d;
+    transform: scale(1.05);
+}
+
+.nav-container button svg {
+    margin-right: 10px; 
+}
