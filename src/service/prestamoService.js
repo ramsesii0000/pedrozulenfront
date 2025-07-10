@@ -1,7 +1,7 @@
 import axios from 'axios';
 import Swal from 'sweetalert2';
 
-const BASE_URL = 'http://localhost:8080';
+const BASE_URL = 'https://biblioteca-pedro-zulen-lvj3.onrender.com';
 
 
 const prestamoService =  {
